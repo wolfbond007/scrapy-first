@@ -12,4 +12,8 @@ class FstSpider(scrapy.Spider):
         item =  AliFirstItem()
         item['title'] = response.xpath("//p[@class='title']/text()").extract()
         yield item
-        # print(item['title'])
+
+        ## 分页
+        # for i in range(2, 100):
+        #     url="http://categray.dangdang.com/pg="+i
+        #     yield scrapy.Request(url=url, callback=self.parse)

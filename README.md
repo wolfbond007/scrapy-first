@@ -25,3 +25,9 @@ scrapy genspider -t basic fst aliwx.com.cn
 # fst 新建文件名
 # aliwx.com.cn 爬虫目标域名 
 ```
+
+## 使用
+第一步: 创建爬虫文件
+第二步: 编辑item, 添加属性
+第三步: 在爬虫文件中进行数据处理 为属性赋值(爬虫文件是第一步创建的，再/spiders文件夹下)
+第四步: 再pipelines文件中进行爬后处理 (如保存到文件 或 写入到数据库)
